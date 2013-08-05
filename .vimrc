@@ -1,5 +1,11 @@
+execute pathogen#infect()
+
+set nocompatible
+syntax on
 set number
 colorscheme slate
+
+filetype plugin indent on
 
 " Tabs
 set expandtab
@@ -29,3 +35,15 @@ set ignorecase
 set smartcase
 set hlsearch
 set incsearch
+
+autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
+autocmd BufEnter *.py set ai sw=4 ts=4 sta et fo=croql
+
+" Mark the 80th column
+set colorcolumn=80
+
+" Ruby & Rails autocomplete
+autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
+autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
+autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
+autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
