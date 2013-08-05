@@ -1,0 +1,10 @@
+#! /bin/sh
+
+unset HTTP_PROXY
+unset HTTPS_PROXY
+
+RAILS_ENV=local
+
+echo 'set red environment'
+
+
