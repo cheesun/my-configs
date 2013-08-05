@@ -1,0 +1,14 @@
+[user]
+	name = Cheesun Choong
+	email = cchoong@fairfaxmedia.com.au
+[core]
+	excludesfile = /Users/cchoong/.gitignore_global
+	whitespace = trailing-space,space-before-tab
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[color]
+	ui = auto
