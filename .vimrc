@@ -17,7 +17,6 @@ Bundle 'gmarik/vundle'
 
 " Core bundles
 Bundle 'taglist.vim'
-Bundle 'easytags.vim'
 Bundle 'SuperTab-continued.'
 
 Bundle 'rking/ag.vim'
